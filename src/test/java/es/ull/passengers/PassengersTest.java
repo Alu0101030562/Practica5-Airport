@@ -23,7 +23,7 @@ public class PassengersTest {
 
     @Test
     @DisplayName("Informacion del pasajero 1")
-    public void testPasajero() {
+    void testPasajero() {
       assertAll("Verificacion de condiciones para el pasajero",
         () -> assertEquals("1", pasajero.getIdentifier()),
         () -> assertEquals("Mike", pasajero.getName()),
@@ -33,7 +33,7 @@ public class PassengersTest {
 
     @Test
     @DisplayName("Informacion del pasajero 2")
-    public void testPasajero2() {
+    void testPasajero2() {
       assertAll("Verificacion de condiciones para el pasajero",
         () -> assertEquals("2", pasajero2.getIdentifier()),
         () -> assertEquals("Javier", pasajero2.getName()),
@@ -43,7 +43,7 @@ public class PassengersTest {
 
     @Test
     @DisplayName("Informacion del pasajero 3")
-    public void testPasajero3() {
+    void testPasajero3() {
       assertAll("Verificacion de condiciones para el pasajero",
         () -> assertEquals("3", pasajero3.getIdentifier()),
         () -> assertEquals("Jean", pasajero3.getName()),
@@ -53,7 +53,7 @@ public class PassengersTest {
 
     @Test
     @DisplayName("Informacion del pasajero 4")
-    public void testPasajero4() {
+    void testPasajero4() {
       assertAll("Verificacion de condiciones para el pasajero",
         () -> assertEquals("4", pasajero4.getIdentifier()),
         () -> assertEquals("Yoshida", pasajero4.getName()),

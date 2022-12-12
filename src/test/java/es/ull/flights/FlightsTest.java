@@ -23,7 +23,7 @@ public class FlightsTest {
 
     @Test
     @DisplayName("Informacion del vuelo 1")
-    public void testVuelo() {
+    void testVuelo() {
       assertAll("Verificacion de condiciones para el vuelo",
         () -> assertEquals("BA0133", vuelo.getFlightNumber()),
         () -> assertEquals(0, vuelo.getNumberOfPassengers())
@@ -32,7 +32,7 @@ public class FlightsTest {
 
     @Test
     @DisplayName("Informacion del vuelo 2")
-    public void testVuelo2() {
+    void testVuelo2() {
       assertAll("Verificacion de condiciones para el vuelo",
         () -> assertEquals("TF215", vuelo2.getFlightNumber()),
         () -> assertEquals(0, vuelo2.getNumberOfPassengers())
@@ -41,7 +41,7 @@ public class FlightsTest {
 
     @Test
     @DisplayName("Informacion del vuelo 3")
-    public void testVuelo3() {
+    void testVuelo3() {
       assertAll("Verificacion de condiciones para el vuelo",
         () -> assertEquals("GC0012", vuelo3.getFlightNumber()),
         () -> assertEquals(0, vuelo3.getNumberOfPassengers())
@@ -50,7 +50,7 @@ public class FlightsTest {
 
     @Test
     @DisplayName("Informacion del vuelo 4")
-    public void testVuelo4() {
+    void testVuelo4() {
       assertAll("Verificacion de condiciones para el vuelo",
         () -> assertEquals("JA950", vuelo4.getFlightNumber()),
         () -> assertEquals(0, vuelo4.getNumberOfPassengers())

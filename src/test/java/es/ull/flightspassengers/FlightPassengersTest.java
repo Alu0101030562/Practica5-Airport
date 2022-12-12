@@ -30,7 +30,7 @@ public class FlightPassengersTest {
   class FlightMethods {
     @Test
     @DisplayName("Se puede añadir pasajeros al vuelo")
-    public void testAddPassenger() {
+    void testAddPassenger() {
       assertAll("comprobacion de que se pueden añadir pasajeros correctamente",
         () -> assertEquals(0, vuelo.getNumberOfPassengers()),
         () -> assertTrue(vuelo.addPassenger(pasajero)),
@@ -42,7 +42,7 @@ public class FlightPassengersTest {
 
     @Test
     @DisplayName("Se puede eliminar pasajeros al vuelo")
-    public void testRemovePassenger() {
+    void testRemovePassenger() {
       assertAll("comprobacion de que se pueden eliminar pasajeros correctamente",
         () -> assertEquals(0, vuelo.getNumberOfPassengers()),
         () -> assertTrue(vuelo.addPassenger(pasajero3)),
@@ -60,7 +60,7 @@ public class FlightPassengersTest {
   class PassengerMethods {
     @Test
     @DisplayName("Se puede ver el vuelo al que esta asignado el pasajero")
-    public void testFlightPassenger() {
+    void testFlightPassenger() {
       assertAll("Comprobación de que se puede visualizar el vuelo del pasajero",
         () -> assertTrue(vuelo.addPassenger(pasajero)),
         () -> assertEquals(vuelo, pasajero.getFlight()),
@@ -75,7 +75,7 @@ public class FlightPassengersTest {
 
     @Test
     @DisplayName("Se puede cambiar el vuelo al que esta asignado el pasajero manualmente")
-    public void testChangeFlightPassenger() {
+    void testChangeFlightPassenger() {
       assertAll("Comprobación de que se puede cambiar el vuelo del pasajero",
         () -> assertNull(pasajero.getFlight()),
         () -> assertEquals(0, vuelo.getNumberOfPassengers()),
