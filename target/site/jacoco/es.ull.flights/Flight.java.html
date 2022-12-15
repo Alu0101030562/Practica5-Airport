@@ -49,21 +49,25 @@ public class Flight {
 <span class="fc" id="L49">        return flightNumber;</span>
     }
 
+    public int getSeats() {
+<span class="fc" id="L53">        return seats;</span>
+    }
+
     public int getNumberOfPassengers() {
-<span class="fc" id="L53">        return passengers.size();</span>
+<span class="fc" id="L57">        return passengers.size();</span>
     }
 
     public boolean addPassenger(Passenger passenger) {
-<span class="pc bpc" id="L57" title="1 of 2 branches missed.">        if (getNumberOfPassengers() &gt;= seats) {</span>
-<span class="nc" id="L58">            throw new RuntimeException(&quot;Not enough seats for flight &quot; + getFlightNumber());</span>
+<span class="pc bpc" id="L61" title="1 of 2 branches missed.">        if (getNumberOfPassengers() &gt;= seats) {</span>
+<span class="nc" id="L62">            throw new RuntimeException(&quot;Not enough seats for flight &quot; + getFlightNumber());</span>
         }
-<span class="fc" id="L60">        passenger.setFlight(this);</span>
-<span class="fc" id="L61">        return passengers.add(passenger);</span>
+<span class="fc" id="L64">        passenger.setFlight(this);</span>
+<span class="fc" id="L65">        return passengers.add(passenger);</span>
     }
 
     public boolean removePassenger(Passenger passenger) {
-<span class="fc" id="L65">        passenger.setFlight(null);</span>
-<span class="fc" id="L66">        return passengers.remove(passenger);</span>
+<span class="fc" id="L69">        passenger.setFlight(null);</span>
+<span class="fc" id="L70">        return passengers.remove(passenger);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

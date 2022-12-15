@@ -49,6 +49,10 @@ public class Flight {
         return flightNumber;
     }
 
+    public int getSeats() {
+        return seats;
+    }
+
     public int getNumberOfPassengers() {
         return passengers.size();
     }
